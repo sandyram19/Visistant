@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import os
 import plotly
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import google.generativeai as genai 
 from langchain.chains import ConversationChain
 from langchain.chains.conversation.memory import ConversationBufferWindowMemory
@@ -34,8 +34,8 @@ def insights_generator(img):
 
 
 
-load_dotenv()
-genai.configure(api_key=os.getenv('PALM_API_KEY'))
+# load_dotenv()
+# genai.configure(api_key=os.getenv('PALM_API_KEY'))
 
 
 
